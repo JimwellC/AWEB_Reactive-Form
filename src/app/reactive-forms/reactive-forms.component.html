@@ -1,0 +1,36 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="col-12 col-md-8 col-lg-6">
+    <h1 class="text-center mb-4">Reactive Forms</h1>
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit()" class="glass-form">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" formControlName="firstName">
+        <label for="firstName">First Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" formControlName="lastName">
+        <label for="lastName">Last Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" formControlName="email">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="password" placeholder="Create a password" formControlName="password">
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3 w-100">Create Account</button>
+    </form>
+    <div class="container mt-5 bg-light p-4 rounded shadow">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-center mb-4">Submitted Values</h5>
+          <p><strong>Status:</strong> {{ formStatus }}</p>
+          <p><strong>First Name:</strong> {{ submittedValues.firstName }}</p>
+          <p><strong>Last Name:</strong> {{ submittedValues.lastName }}</p>
+          <p><strong>Email:</strong> {{ submittedValues.email }}</p>
+          <p><strong>Password:</strong> {{ submittedValues.password }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

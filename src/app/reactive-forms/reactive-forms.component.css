@@ -1,0 +1,71 @@
+/* New styling */
+.glass-form {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b2ebf2;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background: #fff;
+  color: #333;
+  border: 1px solid #b2dfdb;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #26a69a;
+  box-shadow: 0 0 5px rgba(38, 166, 154, 0.5);
+}
+
+.btn-primary {
+  background: #26a69a;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #2bbbad;
+}
+
+.form-floating label {
+  color: #00897b;
+  font-weight: 500;
+}
+
+.form-floating input:focus ~ label,
+.form-floating textarea:focus ~ label {
+  color: #004d40;
+}
+
+.container.bg-light {
+  background-color: #f1f8e9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container.bg-light p {
+  font-size: 15px;
+  color: #555;
+}
+
+.container.bg-light h5 {
+  color: #33691e;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .col-12 {
+    padding: 0 15px;
+  }
+}
